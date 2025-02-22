@@ -7,7 +7,7 @@ async function main() {
         console.log("requesting...");
         await axios.get('http://127.0.0.1:4000', { timeout: 10000 })
             .then(function (response) {
-                console.log(response.data); // This will sometime be empty
+                console.log(response.data); // This will sometimes be empty
             })
             .catch(function (error) {
                 console.log('People we have an error!', error);
